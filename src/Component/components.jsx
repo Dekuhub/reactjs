@@ -1,4 +1,5 @@
 import classes from './component.module.css'
+
 export const Button = ({children}) => {
     return (
         <button className={classes.button}>
@@ -19,3 +20,4 @@ export const Main = ({children}) => {
         </main>
     )
 }
+
