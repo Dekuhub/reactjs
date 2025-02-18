@@ -26,6 +26,7 @@ import './App.css'
 import { Page1 } from './pages/page1'
 import { Page2 } from './pages/page2'
 import { store } from './store/index'
+import { PageFetch } from './pages/PageFetch'
 
 
 function App () {
@@ -37,6 +38,7 @@ function App () {
       <Route path='/' element={<Page1/>} />
       <Route path='/page1' element={<Page1/>} />
       <Route path='/page2' element={<Page2/>} />
+      <Route path='/fetch' element={<PageFetch/>} />
     </Routes>
   </Provider>
 </BrowserRouter>

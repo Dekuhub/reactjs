@@ -1,0 +1,22 @@
+.input {
+    font-size: 64px;
+    width: 60%;
+  }
+  
+  .select {
+    font-size: 64px;
+    width: 30%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .textarea {
+    width: 800px;
+    height: 300px;
+  
+    font-size: 24px;
+  }
