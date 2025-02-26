@@ -1,0 +1,16 @@
+.row {
+    font-size: 42px;
+  }
+  
+  .row label {
+    margin-right: 8px;
+    display: inline-block;
+  
+    width: 300px;
+    text-align: right;
+  }
+  
+  .input {
+    margin-left: 8px;
+    font-size: 42px;
+  }

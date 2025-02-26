@@ -27,6 +27,8 @@ import { Page1 } from './pages/page1'
 import { Page2 } from './pages/page2'
 import { store } from './store/index'
 import { PageFetch } from './pages/PageFetch'
+import { PageUsers } from './pages/PagesUsers'
+import { PageUser } from './pages/page-user'
 
 
 function App () {
@@ -39,6 +41,8 @@ function App () {
       <Route path='/page1' element={<Page1/>} />
       <Route path='/page2' element={<Page2/>} />
       <Route path='/fetch' element={<PageFetch/>} />
+      <Route path='/users' element={<PageUsers/>} />
+      <Route path='/users/:id' element={<PageUser/>} />
     </Routes>
   </Provider>
 </BrowserRouter>
