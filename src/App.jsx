@@ -29,6 +29,7 @@ import { store } from './store/index'
 import { PageFetch } from './pages/PageFetch'
 import { PageUsers } from './pages/PagesUsers'
 import { PageUser } from './pages/page-user'
+import { Tasks } from './pages/tasks'
 
 
 function App () {
@@ -43,6 +44,7 @@ function App () {
       <Route path='/fetch' element={<PageFetch/>} />
       <Route path='/users' element={<PageUsers/>} />
       <Route path='/users/:id' element={<PageUser/>} />
+      <Route path='/tasks' element={<Tasks/>} />
     </Routes>
   </Provider>
 </BrowserRouter>
