@@ -30,6 +30,9 @@ import { PageFetch } from './pages/PageFetch'
 import { PageUsers } from './pages/PagesUsers'
 import { PageUser } from './pages/page-user'
 import { Tasks } from './pages/tasks'
+import { Form } from './pages/Form/form'
+import { EditableGridPage } from './pages/EditableGridPage'
+
 
 
 function App () {
@@ -45,6 +48,8 @@ function App () {
       <Route path='/users' element={<PageUsers/>} />
       <Route path='/users/:id' element={<PageUser/>} />
       <Route path='/tasks' element={<Tasks/>} />
+      <Route path='/form' element={<Form />}/>
+      <Route path='/grid' element={<EditableGridPage />}/>
     </Routes>
   </Provider>
 </BrowserRouter>

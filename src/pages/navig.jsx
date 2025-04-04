@@ -7,6 +7,8 @@ export const Naving = () => {
     <Link to='/fetch'>PageFetch</Link>
     <Link to='/users'>Users</Link>
     <Link to='/tasks'>Tasks</Link>
+    <Link to='/form'>Form</Link>
+    <Link to='/grid'>Editable</Link>
     </>
     )
 } 
