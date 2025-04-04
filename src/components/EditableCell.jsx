@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export const EditableCell = ({ value, onSave, onAddCell, index }) => {
+export const EditableCell = ({ 
+  value, 
+  onSave, 
+  onAddCellDown, 
+  onAddCellRight, 
+  rowIndex 
+}) => {
   const [isEditing, setIsEditing] = useState(false);
   const [inputValue, setInputValue] = useState(value);
   const inputRef = useRef(null);
@@ -30,12 +36,18 @@ export const EditableCell = ({ value, onSave, onAddCell, index }) => {
     
     if (e.ctrlKey && e.key === 'ArrowDown') {
       e.preventDefault();
-      onAddCell();
+      onAddCellDown();
+    }
+    
+    if (e.ctrlKey && e.key === 'ArrowRight') {
+      e.preventDefault();
+      e.stopPropagation();
+      onAddCellRight();
     }
   };
 
   const saveValue = () => {
-    onSave(inputValue, index);
+    onSave(inputValue);
     setIsEditing(false);
   };
 
